@@ -1,0 +1,78 @@
+{
+  "name": "hpinsight-module",
+  "version": "0.0.1",
+  "author": "palsveningson",
+  "summary": "Module for HP Insight hardware monitoring",
+  "license": "Apache-2.0",
+  "source": "git://github.com/palsveningson/hpinsight-module",
+  "project_page": "https://github.com/palsveningson/hpinsight-module",
+  "issues_url": "https://github.com/palsveningson/hpinsight-module/issues",
+  "description": "Puppet module to handle HP Insight",
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": ">= 3.1.0 < 5.0.0"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": ">= 3.1.0 < 5.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "OracleLinux",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Scientific",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "SLES"
+    },
+    {
+      "operatingsystem": "SLED"
+    },
+    {
+      "operatingsystem": "Solaris",
+      "operatingsystemrelease": [
+        "10",
+        "11"
+      ]
+    }
+  ],
+  "dependencies": [
+    {"name":"puppetlabs/stdlib","version_requirement":">= 4.6.0 < 6.0.0"}
+    {"name":"razorsedge-snmp","version_requirement":">= 3.0.0"}
+  ]
+}

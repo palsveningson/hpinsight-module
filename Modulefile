@@ -1,0 +1,10 @@
+name    'puppet-module-hpinsight'
+version ''
+source 'git://github.com/kividiot/puppet-module-hpinsight.git'
+author 'kividiot'
+license 'Apache License, Version 2.0'
+summary 'hpinsight'
+description 'Manage packages and services for HP Insight hardware monitoring'
+project_page 'https://github.com/kividiot/puppet-module-hpinsight'
+
+dependency 'puppetlabs/stdlib', '>= 4.6.0'
