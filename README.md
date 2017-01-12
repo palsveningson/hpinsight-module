@@ -6,8 +6,10 @@ https://github.com/razorsedge/puppet-snmp
 This is to make sure net-snmp is installed and configured correctly. For more info, please refeer to the readme of the module.
 
 IMPORTANT!
-For this module to work as it is supposed to, you need to specify the libcmaX64.so in the dlmod-variable for the snmp-module:
+For this module to work as it is supposed to, you need to specify the libcmaX64.so in the dlmod-variable for the snmp-module.
+This is done by adding the following in your hiera:
 snmp::dlmod: [ '/usr/lib64/libcmaX64.so' ]
+
 To solve this a smoother way is on the "todo"-list of the next version.
 
 ===
