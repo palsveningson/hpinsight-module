@@ -70,7 +70,7 @@ class hpinsight(
 # This will install hps snmp software aswell as net-snmp since it is a dependency.
 
   if $snmp_manage == true {
-    contain ::snmp
+    class { '::snmp': } 
 
     service { [$hp_snmp_agents]:
       ensure  => running,
