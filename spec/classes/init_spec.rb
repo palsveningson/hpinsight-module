@@ -29,6 +29,8 @@ describe 'hpinsight' do
           {
             :osfamily     => v[:osfamily],
             :architecture => 'x86_64',
+            :manufacturer => 'HP',
+            :virtual => 'physical',
           }
         end
 
@@ -41,24 +43,10 @@ describe 'hpinsight' do
 
         it {
           should contain_service("#{v[:service_name]}").with({
-            'ensure'    => 'present',
+            'ensure'    => 'running',
             'name'      => v[:service_name],
           })
         }
-
-      end
-    end
-  end
-
-  describe 'with optional parameters set' do
-    platforms.sort.each do |k,v|
-      context "where osfamily is <#{v[:osfamily]}>" do
-        let :facts do
-          {
-            :osfamily          => v[:osfamily],
-            :architecture      => 'x86_64',
-          }
-        end
 
       end
     end
